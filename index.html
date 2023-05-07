@@ -5,33 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <title>Water Ice Fire</title>
 </head>
 <body>
   <header>
     <h1 class="header-title"><span class="water">Water</span> <span class="ice">Ice</span> <span class="fire">Fire</span></h1>
-    <p>Choose your power and kill the enemy!</p>
+    <p>Choose your caracter and kill the enemy!</p>
   </header>
   <main>
     <ul id="powers" class="powers">
-      <li><img class="element-width" data-key="0" src="./assets/images/water-1.png" alt="waves" onclick="game(event)"/></li>
-      <li><img class="element-width" data-key="1" src="./assets/images/snow-1.png" alt="Ice" onclick="game(event)"/></li>
-      <li><img class="element-width"  data-key="2" src="./assets/images/fire-1.png" alt="fire" onclick="game(event)"/></li>
+      <li><img data-key="0" src="./assets/images/tartas1.png" alt="waves" onclick="game(event)" width="120"/></li>
+      <li><img data-key="1" src="./assets/images/ayaka1.png" alt="Ice" onclick="game(event)" width="100"/></li>
+      <li><img data-key="2" src="./assets/images/hutao1.png" alt="fire" onclick="game(event)" width="120"/></li>
     </ul>
     <hr>
     <div class="info">
-      <div class="enemy">
+      <div id="enemy" class="enemy">
         <h3>Your enemy:</h3> 
-        <img src="./assets/images/enemy.png" class="element-width" alt="enemy">
+        <img src="./assets/images/enemy.png" width="120" class="element-width" alt="enemy">
       </div>
       <div class="game-stats">
         <p>Round: <span id="round">0</span></p>
-        <p>Your lives: <span id="player">5</span> | Enemys's lives: <span id="enemy">5</span></p>
+        <p>Your lives: <span id="player-lives">5</span> | Enemys's lives: <span id="enemy-lives">5</span></p>
         <p>Combat Area: <span id="message">Empty</span></p>
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer>
+    <h3>By nathcarnevalli</h3>
+  </footer>
   <script src="./js/game.js"></script>
 </body>
 </html>
