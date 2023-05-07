@@ -42,12 +42,13 @@ main {
   display: flex;
   list-style: none;
   width: 65%;
-  justify-content: center;
+  justify-content: space-between;
   border: 3px solid #5e5e5e;
   align-items: center;
   margin: 20px auto;
-  padding: 20px;
+  padding: 80px;
   gap: 60px;
+  height: 125px;
 }
 
 hr {
@@ -85,8 +86,4 @@ hr {
   flex-direction: column;
   gap: 12px;
   font-size: 20px;
-}
-
-.element-width {
-  width: 80px;
 }

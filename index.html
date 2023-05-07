@@ -13,10 +13,10 @@
     <p>Choose your power and kill the enemy!</p>
   </header>
   <main>
-    <ul class="powers">
-      <li><img class="element-width" src="./assets/images/water-1.png" alt="waves"/></li>
-      <li><img class="element-width" src="./assets/images/snow-1.png" alt="Ice"/></li>
-      <li><img class="element-width" src="./assets/images/fire-1.png" alt="fire"/></li>
+    <ul id="powers" class="powers">
+      <li><img class="element-width" data-key="0" src="./assets/images/water-1.png" alt="waves" onclick="game(event)"/></li>
+      <li><img class="element-width" data-key="1" src="./assets/images/snow-1.png" alt="Ice" onclick="game(event)"/></li>
+      <li><img class="element-width"  data-key="2" src="./assets/images/fire-1.png" alt="fire" onclick="game(event)"/></li>
     </ul>
     <hr>
     <div class="info">
@@ -25,10 +25,9 @@
         <img src="./assets/images/enemy.png" class="element-width" alt="enemy">
       </div>
       <div class="game-stats">
-        <p>Round: <span>0</span></p>
-        <p>Your lives: <span>5</span></p>
-        <p>Enemys's lives: <span>5</span></p>
-        <p>Combat Area: <span>Empty</span></p>
+        <p>Round: <span id="round">0</span></p>
+        <p>Your lives: <span id="player">5</span> | Enemys's lives: <span id="enemy">5</span></p>
+        <p>Combat Area: <span id="message">Empty</span></p>
       </div>
     </div>
   </main>
