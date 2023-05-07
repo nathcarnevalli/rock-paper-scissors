@@ -28,7 +28,7 @@ function showEnemyStats(computerSelection, countRound) {
   for (let node of enemy.children) {
     if (node.src !== undefined) {
       if (computerSelection === 0) {
-        node.src = './assets/images/fire.png'
+        node.src = './assets/images/water.png'
         node.style.width = '80px'
       } else if (computerSelection === 1) {
         node.src = './assets/images/ice.png'
