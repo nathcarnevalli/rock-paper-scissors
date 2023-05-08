@@ -4,4 +4,4 @@ It's a game like rock paper scissors, but you choose between three genshin impac
 
 Images copyright: miHoYo
 
-Live link: https://nathcarnevalli.github.io/water-ice-fire/
+Live link: https://nathcarnevalli.github.io/water-ice-fire/index.html
