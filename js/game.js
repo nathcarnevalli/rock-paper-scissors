@@ -10,7 +10,7 @@ function playRound(playerSelection, computerSelection) {
   if (
     (playerSelection === 0 && computerSelection === 2) ||
     (playerSelection === 1 && computerSelection === 0) ||
-    (playerSelection === 2 && computerSelection === 3)
+    (playerSelection === 2 && computerSelection === 1)
   ) {
     return changeGameStats('player', playerSelection, computerSelection)
   } else if (playerSelection === computerSelection) {
