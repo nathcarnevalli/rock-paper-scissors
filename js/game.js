@@ -161,3 +161,36 @@ function togglePower() {
 }
 
 togglePower()
+
+function getRandomEnemy() {
+  const enemyRound = Math.floor(Math.random() * 7)
+
+  switch (enemyRound) {
+    case 0:
+      enemy.children[1].src = './assets/images/enemy.png'
+      break
+    case 1:
+      enemy.children[1].src = './assets/images/enemy2.png'
+      break
+    case 2:
+      enemy.children[1].src = './assets/images/enemy3.png'
+      break
+    case 3:
+      enemy.children[1].src = './assets/images/enemy4.png'
+      break
+    case 4:
+      enemy.children[1].src = './assets/images/enemy5.png'
+      break
+    case 5:
+      enemy.children[1].src = './assets/images/enemy6.png'
+      break
+    case 6:
+      enemy.children[1].src = './assets/images/enemy7.png'
+      break
+    case 7:
+      enemy.children[1].src = './assets/images/enemy8.png'
+      break
+  }
+}
+
+getRandomEnemy()
