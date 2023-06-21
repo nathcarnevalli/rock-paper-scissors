@@ -163,7 +163,7 @@ function togglePower() {
 togglePower()
 
 function getRandomEnemy() {
-  const enemyRound = Math.floor(Math.random() * 7)
+  const enemyRound = Math.floor(Math.random() * 8)
 
   switch (enemyRound) {
     case 0:
