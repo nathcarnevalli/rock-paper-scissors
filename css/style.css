@@ -6,6 +6,15 @@
   font-family: 'Press Start 2P', cursive;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:visited {
+  color: #000;
+}
+
 .water {
   color: #22e1eb;
 }
